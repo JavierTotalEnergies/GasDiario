@@ -16,7 +16,7 @@ commodities = [
     "JKM_LNG_USD", 
     "EU_CARBON_EUR"
 ]
-api_key = "Token ee710707717f5ce9e3f22dbed30b8a2c2e068529948b4b203c5ddb1d8e624745"
+api_key = os.getenv("API_KEY")
 headers = {"Authorization": api_key}
 
 # ESTE ES EL NOMBRE FIJO (sin la fecha en el nombre)
