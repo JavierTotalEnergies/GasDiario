@@ -16,9 +16,16 @@ commodities = [
     "JKM_LNG_USD", 
     "EU_CARBON_EUR"
 ]
+
 api_key = os.getenv("API_KEY")
 
 print("API_KEY recibida:", api_key)
+
+if not api_key:
+    raise ValueError("API_KEY no encontrada")
+
+if not api_key.startswith("Token "):
+    api_key = f"Token {api_key}"
 
 headers = {"Authorization": api_key}
 
