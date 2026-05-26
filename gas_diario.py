@@ -17,6 +17,9 @@ commodities = [
     "EU_CARBON_EUR"
 ]
 api_key = os.getenv("API_KEY")
+
+print("API_KEY recibida:", api_key)
+
 headers = {"Authorization": api_key}
 
 # ESTE ES EL NOMBRE FIJO (sin la fecha en el nombre)
